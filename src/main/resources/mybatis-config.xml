@@ -16,9 +16,9 @@
 			</transactionManager>
 			<dataSource type="POOLED">
 				<property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
-				<property name="url" value="jdbc:oracle:thin:@202.200.112.118:1521:orclsxuniv"/>
-				<property name="username" value="sxuniv"/>
-				<property name="password" value="sxuniv"/>
+				<property name="url" value="jdbc:oracle:thin:"/>
+				<property name="username" value=""/>
+				<property name="password" value=""/>
 			</dataSource>
 		</environment>
 	</environments>
