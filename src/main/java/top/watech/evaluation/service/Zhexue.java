@@ -27,10 +27,10 @@ public class Zhexue {
                 evals.append(evalService.compthreemin("副教授以上", evaluat.getZGJSZS(), evaluat.getFGJSZS(), evaluat.getJSZS(), 0.2));
                 if ((evals).length()>0) {
                  //   System.out.println(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals);
-                    arrayList.add(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals.toString());
+                    arrayList.add(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals.toString()+"\r\n");
                 }
             }
-            FileWriter writer = new FileWriter(args[0], true);
+            FileWriter writer = new FileWriter(args[0]+"\\哲学类.txt");
             writer.write( "————哲学类————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");

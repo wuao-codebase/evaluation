@@ -1,7 +1,10 @@
 package top.watech.evaluation.service;
 
 
+import java.text.DecimalFormat;
+
 public class EvalService {
+    DecimalFormat df=new DecimalFormat("0.00");
     //单值在标准左右10 学分左右
     public  String compnear(String rule, String a,double value) {
         if (Double.valueOf(a)<value-10||Double.valueOf(a)>value+10) {
@@ -27,7 +30,7 @@ public class EvalService {
     public  String comptowmax(String rule,String a,String b,double value) {
         double temp = Double.valueOf(a)/Double.valueOf(b);
         if (temp>value) {
-            return rule+temp+"不符合最大"+value+"的标准\t";
+            return rule+df.format(temp)+"不符合最大"+value+"的标准\t";
         }
         return "";
     }
@@ -35,7 +38,7 @@ public class EvalService {
     public  String comptowmin(String rule,String a,String b,double value) {
         double temp = Double.valueOf(a)/Double.valueOf(b);
         if (temp<value) {
-            return rule+temp+"不符合最小"+value+"的标准\t";
+            return rule+df.format(temp)+"不符合最小"+value+"的标准\t";
         }
         return "";
     }
@@ -43,7 +46,7 @@ public class EvalService {
     public  String compthreemin(String rule,String a,String b,String c,double value) {
         double temp =(Double.valueOf(a)+Double.valueOf(b))/Double.valueOf(c);
         if (temp<value) {
-            return rule+temp+"不符合最小"+value+"的标准\t";
+            return rule+df.format(temp)+"不符合最小"+value+"的标准\t";
         }
         return "";
     }

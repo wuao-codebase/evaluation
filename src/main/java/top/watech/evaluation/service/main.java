@@ -5,11 +5,11 @@ import java.io.IOException;
 
 public class main {
     public static void main(String[] args) throws IOException {
-        String[] list ={"E:\\text.txt"};
-        File file=new File(list[0]);
-        if(!file.exists())
+        String[] list ={"E:\\evaluation"};
+        File file =new File("E:\\evaluation");
+        if  (!file .exists()  && !file .isDirectory())
         {
-           file.createNewFile();
+            file .mkdir();
         }
         Zhexue.main(list);
         JingJixue.main(list);

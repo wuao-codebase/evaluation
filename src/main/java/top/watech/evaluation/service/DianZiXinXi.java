@@ -32,10 +32,10 @@ public class DianZiXinXi {
                 evals.append(evalService.comptowmin("生均专业教学科研仪器设备(万元)",evaluat.getZSBF() ,evaluat.getZXSRS(), 0.5));
                 if ((evals).length()>0) {
                  //   System.out.println(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals);
-                    arrayList.add(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals.toString());
+                    arrayList.add(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals.toString()+"\r\n");
                 }
             }
-            FileWriter writer = new FileWriter(args[0], true);
+            FileWriter writer = new FileWriter(args[0]+"\\电子信息类.txt");
             writer.write( "————电子信息类————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");

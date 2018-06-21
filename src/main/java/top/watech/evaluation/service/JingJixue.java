@@ -29,10 +29,10 @@ public class JingJixue {
                 evals.append(evalService.compmin("生均图书", evaluat.getZYTUSHU(), 100));
                 if ((evals).length() > 0) {
                     //System.out.println(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals);
-                    arrayList.add(evaluat.getXXXM() + "-" + evaluat.getXYMC() + "-" + evaluat.getSANJMC() + "\t" + evals.toString());
+                    arrayList.add(evaluat.getXXXM() + "-" + evaluat.getXYMC() + "-" + evaluat.getSANJMC() + "\t" + evals.toString()+"\r\n");
                 }
             }
-            FileWriter writer = new FileWriter(args[0], true);
+            FileWriter writer = new FileWriter(args[0]+"\\经济学类.txt");
             writer.write( "————经济学类————\r\n");
             for (String s : arrayList) {
                 writer.write(s + "\r\n");
