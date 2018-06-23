@@ -1,12 +1,9 @@
 package top.watech.evaluation.service;
 
-import java.io.File;
-
 public class test {
     public static void main(String[] args) {
-        File[] roots = File.listRoots();
-        for (int i =0; i < roots.length; i++) {
-            System.out.println(roots[i]);
-        }
+
+        double a=100/50*2;
+        System.out.println("a = " + a);
     }
 }
