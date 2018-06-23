@@ -35,6 +35,9 @@ public class YiShuLiLun {
                     arrayList.add(evaluat.getXXXM() + "-" + evaluat.getXYMC() + "-" + evaluat.getSANJMC() + "\t" + evals.toString()+"\r\n");
                 }
             }
+            if(args.length==0){
+                args = new String[]{"C:"};
+            }
             FileWriter writer = new FileWriter(args[0]+"\\艺术理论类.txt");
             writer.write( "————艺术理论类————\r\n");
             for (String s : arrayList) {

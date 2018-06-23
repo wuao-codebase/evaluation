@@ -35,6 +35,9 @@ public class JiSuanJi {
                     arrayList.add(evaluat.getXXXM()+"-"+evaluat.getXYMC()+"-"+evaluat.getSANJMC()+"\t"+evals.toString()+"\r\n");
                 }
             }
+            if(args.length==0){
+                args = new String[]{"C:"};
+            }
             FileWriter writer = new FileWriter(args[0]+"\\计算机类.txt");
             writer.write( "————计算机类————\r\n");
             for (String s : arrayList) {
