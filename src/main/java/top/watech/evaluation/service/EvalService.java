@@ -26,6 +26,14 @@ public class EvalService {
         }
         return "";
     }
+    //和值比标准值大  实践基地
+    public  String compsummin(String rule,String a,String b,double value) {
+        double temp = Double.valueOf(a)+Double.valueOf(b);
+        if (temp<value) {
+            return rule+temp+"不符合最小"+value+"的标准\t";
+        }
+        return "";
+    }
     //比值比标准值大  生师比
     public  String comptowmax(String rule,String a,String b,double value) {
         double temp = Double.valueOf(a)/Double.valueOf(b);

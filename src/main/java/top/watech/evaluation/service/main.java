@@ -11,12 +11,13 @@ public class main {
         {
             file .mkdir();
         }
-//        Zhexue.main(list);
-//        JingJixue.main(list);
-//        DianZiXinXi.main(list);
-//        JiSuanJi.main(list);
-//        YiShuLiLun.main(list);
-//        YiXueJiShu_YXJianYan.main(list);
+        Zhexue.main(list);
+        JingJixue.main(list);
+        CaiZhengxue.main(list);
         JinRongxue.main(list);
+        DianZiXinXi.main(list);
+        JiSuanJi.main(list);
+        YiShuLiLun.main(list);
+        YiXueJiShu_YXJianYan.main(list);
     }
 }

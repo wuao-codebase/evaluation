@@ -13,6 +13,24 @@ public class Evaluat {
     private String ZSBF; //总设备费用
     private String ZYTUSHU; //生均图书
     private String DNJXJF; //教学支出
+    private String XNSXJD; //校外基地
+    private String XWSXJD; //校内基地
+
+    public String getXNSXJD() {
+        return XNSXJD;
+    }
+
+    public void setXNSXJD(String XNSXJD) {
+        this.XNSXJD = XNSXJD;
+    }
+
+    public String getXWSXJD() {
+        return XWSXJD;
+    }
+
+    public void setXWSXJD(String XWSXJD) {
+        this.XWSXJD = XWSXJD;
+    }
 
     public String getBSJSZS() {
         return BSJSZS;
