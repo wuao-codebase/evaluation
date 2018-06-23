@@ -30,7 +30,7 @@ public class JinRongxue {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\金融学类.txt");
             writer.write( "————金融学类————\r\n");

@@ -31,7 +31,7 @@ public class YiXueJiShu_YXJianYan {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\医学技术类—医学检验技术.txt");
             writer.write( "————医学技术类—医学检验技术————\r\n");

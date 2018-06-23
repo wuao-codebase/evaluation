@@ -36,7 +36,7 @@ public class JiSuanJi {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\计算机类.txt");
             writer.write( "————计算机类————\r\n");

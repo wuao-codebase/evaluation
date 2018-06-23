@@ -36,7 +36,7 @@ public class YiShuLiLun {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\艺术理论类.txt");
             writer.write( "————艺术理论类————\r\n");

@@ -32,7 +32,7 @@ public class CaiZhengxue {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\财政学类.txt");
             writer.write( "————财政学类————\r\n");

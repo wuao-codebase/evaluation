@@ -31,7 +31,7 @@ public class Zhexue {
                 }
             }
             if(args.length==0){
-                args = new String[]{"C:"};
+                args = new String[]{"E:"};
             }
             FileWriter writer = new FileWriter(args[0]+"\\哲学类.txt");
             writer.write( "————哲学类————\r\n");
