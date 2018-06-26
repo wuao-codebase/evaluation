@@ -18,7 +18,7 @@ public class DongWuYiXue {
             sqlSession = SqlSessionFactoryUtil.openSqlSession();
             EvalMapper evalMapper = sqlSession.getMapper(EvalMapper.class);
             EvalService evalService = new EvalService();
-            List<String> list = Arrays.asList();
+            List<String> list = Arrays.asList("090401");
             List<Evaluat> eval = evalMapper.getEval(list);
             for (Evaluat evaluat : eval) {
                 StringBuilder evals = new StringBuilder();

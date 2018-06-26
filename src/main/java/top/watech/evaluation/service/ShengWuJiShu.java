@@ -38,8 +38,8 @@ public class ShengWuJiShu {
             if(args.length==0){
                 args = new String[]{"E:"};
             }
-            FileWriter writer = new FileWriter(args[0]+"\\生物科学.txt");
-            writer.write( "————生物科学————\r\n");
+            FileWriter writer = new FileWriter(args[0]+"\\生物技术.txt");
+            writer.write( "————生物技术————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");
             }

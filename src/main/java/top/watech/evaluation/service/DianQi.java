@@ -36,8 +36,8 @@ public class DianQi {
             if(args.length==0){
                 args = new String[]{"E:"};
             }
-            FileWriter writer = new FileWriter(args[0]+"\\电器.txt");
-            writer.write( "————电器————\r\n");
+            FileWriter writer = new FileWriter(args[0]+"\\电气.txt");
+            writer.write( "————电气————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");
             }

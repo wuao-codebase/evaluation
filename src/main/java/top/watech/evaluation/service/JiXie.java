@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class JiXieXue {
+public class JiXie {
 
     public static void main(String[] args) {
         SqlSession sqlSession = null;

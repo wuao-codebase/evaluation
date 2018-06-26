@@ -34,8 +34,8 @@ public class LvYouGuanLi {
             if(args.length==0){
                 args = new String[]{"E:"};
             }
-            FileWriter writer = new FileWriter(args[0]+"\\旅游管理\n.txt");
-            writer.write( "————旅游管理\n————\r\n");
+            FileWriter writer = new FileWriter(args[0]+"\\旅游管理.txt");
+            writer.write( "————旅游管理————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");
             }

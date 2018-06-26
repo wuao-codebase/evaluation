@@ -38,8 +38,8 @@ public class DiZhi {
             if(args.length==0){
                 args = new String[]{"E:"};
             }
-            FileWriter writer = new FileWriter(args[0]+"\\地质.txt");
-            writer.write( "————地质————\r\n");
+            FileWriter writer = new FileWriter(args[0]+"\\地质类.txt");
+            writer.write( "————地质类————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");
             }

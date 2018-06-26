@@ -34,8 +34,8 @@ public class DiQiuXinXi {
             if(args.length==0){
                 args = new String[]{"E:"};
             }
-            FileWriter writer = new FileWriter(args[0]+"\\地球信息与技术.txt");
-            writer.write( "————地球信息与技术————\r\n");
+            FileWriter writer = new FileWriter(args[0]+"\\地球信息科学与技术.txt");
+            writer.write( "————地球信息科学与技术————\r\n");
             for (String s : arrayList) {
                 writer.write(s+"\r\n");
             }
